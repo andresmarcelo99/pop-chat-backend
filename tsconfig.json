@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",
+    "allowJs": false,
+    /* Modules */
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strict": true,
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
+    "sourceMap": true,
+    "outDir": "build",
+    "baseUrl": "."
+  },
+  "include": ["src/**/*"],
+  "exclude": [".templates"]
+}
