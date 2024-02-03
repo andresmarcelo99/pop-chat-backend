@@ -1,25 +1,15 @@
 {
   "compilerOptions": {
-    /* Language and Environment */
-    "target": "es2016",
-    "allowJs": false,
-    /* Modules */
+    "lib": ["es5", "es6"],
+    "target": "es5",
     "module": "commonjs",
-    "esModuleInterop": true,
     "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "experimentalDecorators": true,
+    "outDir": "./build",
     "emitDecoratorMetadata": true,
-    "strictPropertyInitialization": false,
-    "strict": true,
-    "paths": {
-      "*": ["node_modules/*", "src/types/*"]
-    },
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
-    "outDir": "build",
-    "baseUrl": "."
+    "strict": false
   },
   "include": ["src/**/*"],
   "exclude": [".templates"]

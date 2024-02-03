@@ -1,6 +1,7 @@
-import express, { Request, Response } from 'express';
-import cors from 'cors';
-import { AppDataSource } from './database';
+import * as express from 'express';
+import * as cors from 'cors';
+
+import { AppDataSource } from './database/DataSource';
 
 const app = express();
 const port = Number(process.env.PORT || 8080);

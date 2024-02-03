@@ -7,7 +7,7 @@ import {
 } from 'typeorm';
 
 @Entity()
-export class User {
+class User {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -29,5 +29,7 @@ export class User {
   @UpdateDateColumn()
   updated_date: Date;
 }
+
+export default User;
 
 // TODO Implement topics column

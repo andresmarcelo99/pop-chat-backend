@@ -11,7 +11,7 @@
     "clean": "rimraf ./build",
     "watch-node": "nodemon -r dotenv/config build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migration:create": "npx typeorm migration:create process.env.path",
+    "migration:create": "npx typeorm migration:create",
     "migration:run": "ts-node -r dotenv/config ./node_modules/typeorm/cli.js migration:run --dataSource ./src/database/index.ts"
   },
   "keywords": [],
